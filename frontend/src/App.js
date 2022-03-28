@@ -1,9 +1,20 @@
-function App() {
+import Header from "./comonents /Header";
+import Footer from "./comonents /Footer";
+import Home from "./screens/Home";
+import { Container } from "react-bootstrap";
+
+const App = () => {
   return (
-    <div className="container">
-      <h1> Welcome to lets Sports </h1>
-    </div>
+    <>
+      <Header />
+      <main className="py-3">
+        <Container>
+          <Home />
+        </Container>
+      </main>
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;
