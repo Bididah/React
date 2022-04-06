@@ -1,4 +1,4 @@
-import Header from "./comonents /Header";
+import { Header } from "./comonents /Header";
 import Footer from "./comonents /Footer";
 import Home from "./screens/Home";
 import { Container } from "react-bootstrap";
