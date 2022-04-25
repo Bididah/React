@@ -1,8 +1,8 @@
 const express = require("express");
-const { products } = require("./Data/products");
+const { products } = require("../frontend/src/products");
 const app = express();
 
-app.get("/", (req, res) => {
+app.get("/api/products", (req, res) => {
   res.json(products);
 });
 
