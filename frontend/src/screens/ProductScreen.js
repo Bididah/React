@@ -15,7 +15,7 @@ const ProductScreen = () => {
       setProduct(data);
     };
     fetchProduct();
-  }, [id]);
+  }, []);
   return (
     <>
       <Link to="/" className="btn btn-primary">

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "history": "^5.3.0",
     "js-tokens": "^4.0.0",
@@ -21,7 +22,9 @@
   },
   "scripts": {
     "start": "node backend/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -32,5 +35,9 @@
   "bugs": {
     "url": "https://github.com/Bididah/ecomerce/issues"
   },
-  "homepage": "https://github.com/Bididah/ecomerce#readme"
+  "homepage": "https://github.com/Bididah/ecomerce#readme",
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15"
+  }
 }
